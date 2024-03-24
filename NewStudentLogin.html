@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url(download.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;      
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 450px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for options in the role dropdown */
+        select#role {
+            padding: 12px;
+            border-radius: 5px;
+            appearance: none; /* Remove default arrow */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            color: #333;
+        }
+
+        select#role option {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            color: blue;
+        }
+
+        /* Hover effect for options */
+        select#role option:hover {
+            background-color: #007bff;
+            color: blue;
+        }
+        
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            max-width: 200px;
+        }
+
+        /* Style for login link */
+        .login-link {
+            margin-top: 20px;
+        }
+
+        .login-link a {
+            color: #333;
+            text-decoration: none;
+            color:blue;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+            color:green;
+        }
+
+        /* Increase size of the text */
+        .logo-label {
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <form action="Login" method="post">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Your Logo">
+            <label class="logo-label" style="color: #333; font-weight: bold; display: block; margin-top: 10px;">Log in To AUCA Portal</label>
+        </div>
+        
+        <!-- Form fields -->
+         <label for="email">Email</label>
+        <input type="text" id="email" name="email" required><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <!-- Role selection -->
+        <label for="role">Role</label>
+        <select id="role" name="role" required>
+            <option value="select your role">Select Your Role</option>
+            <option value="admin">Admin</option>
+            <option value="teacher">Teacher</option>
+            <option value="student">Student</option>
+        </select><br>
+        
+        <input type="submit" value="Login">
+
+        <!-- Login link -->
+        <div class="login-link">
+            <label> Don't have an account? <a href="NewStudentSignUp.html">SignUp</a></label>
+        </div>
+    </form>
+</body>
+</html>
