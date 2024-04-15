@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Sign Up Page</title>
+    <title>User Login Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -48,22 +48,21 @@
             padding: 20px;
             border: none;
             border-radius: 5px;
-            background-color: #007bff;
+            background-color:green;
             color: #fff;
             cursor: pointer;
             transition: background-color 0.3s ease;
             font-size: 20px;
         }
 
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
+        
+        
 
-        /* Style for options in the role dropdown */
+     
         select#role {
             padding: 12px;
             border-radius: 5px;
-            appearance: none; /* Remove default arrow */
+            appearance: none; 
             -webkit-appearance: none;
             -moz-appearance: none;
             background-color: #f2f2f2;
@@ -79,7 +78,7 @@
             color: blue;
         }
 
-        /* Hover effect for options */
+       
         select#role option:hover {
             background-color: #007bff;
             color: blue;
@@ -94,7 +93,7 @@
             max-width: 200px;
         }
 
-        /* Style for login link */
+        
         .login-link {
             margin-top: 20px;
         }
@@ -110,7 +109,7 @@
             color:green;
         }
 
-        /* Increase size of the text */
+        
         .logo-label {
             font-size: 28px;
         }
@@ -118,19 +117,19 @@
 </head>
 <body>
     <form action="Login" method="post">
-        <!-- Logo -->
+      
         <div class="logo-container">
             <img src="logo.jpg" alt="Your Logo">
             <label class="logo-label" style="color: #333; font-weight: bold; display: block; margin-top: 10px;">Log in To AUCA Portal</label>
         </div>
         
-        <!-- Form fields -->
+        
          <label for="email">Email</label>
         <input type="text" id="email" name="email" required><br>
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required><br>
         
-        <!-- Role selection -->
+        
         <label for="role">Role</label>
         <select id="role" name="role" required>
             <option value="select your role">Select Your Role</option>
@@ -141,7 +140,7 @@
         
         <input type="submit" value="Login">
 
-        <!-- Login link -->
+        
         <div class="login-link">
             <label> Don't have an account? <a href="NewStudentSignUp.html">SignUp</a></label>
         </div>

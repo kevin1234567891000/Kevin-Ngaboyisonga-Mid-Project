@@ -6,33 +6,36 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Background image styling */
+       
         body {
             background-image: url(download.jpg);
             background-size: cover;
             height: 100vh;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        /* Form container styling */
+       
         .form-container {
-            background-color: cyan; /* Semi-transparent white background */
-            padding: 70px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-            color: red; /* Text color */
-            width: 500px; /* Increased width */
-        }
-        /* Sidebar styling */
+    background-color: cyan;
+    padding: 90px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: red;
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+        
         .sidebar .nav-link {
-            color: blue; /* Link color */
-            font-weight: bold; /* Bold font */
+            color: blue; 
+            font-weight: bold;
         }
         .sidebar .nav-link:hover {
-            background-color: #f0f0f0; /* Light gray background on hover */
+            background-color: #f0f0f0;
         }
     </style>
 </head>
@@ -41,7 +44,7 @@
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="form-container">
-                <!-- Sidebar -->
+               
                 <nav class="sidebar">
                     <div class="sidebar-sticky">
                         <ul class="nav flex-column">
@@ -50,48 +53,45 @@
                                     ADMINISTRATION DASHBOARD
                                 </a>
                             </li>
-                            <!-- Add your form items here -->
+                            
                              <li class="nav-item">
-                <a class="nav-link" href="SemesterRegist.html">
-                    Semester
+                <a class="nav-link" href="RegisterTeacher.jsp">
+                    Register Teacher
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="StudentRegister.html">
-                   Add Student
+                <a class="nav-link" href="DeleteTeacher.jsp">
+                   Delete Teacher
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Academic.jsp">
+                <a class="nav-link" href="DisplayTeachers.jsp">
+                   Display Teachers
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="Academi.jsp">
                     Academic Unit
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="TeacherRegister.html">
-                     Add Teacher
+                <a class="nav-link" href="SemesterRegist.html">
+                     Register Semester
                 </a>
             </li>
+           
             <li class="nav-item">
-                <a class="nav-link" href="studentReg.jsp">
-                   Add Course
+                <a class="nav-link" href="CourseRegister.jsp">
+                   Register Course
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Registration.jsp">
-                    Student Registration
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="academicUnit.jsp">
-                    Course Description
-                </a>
-            </li>
-                            <!-- End of form items -->
+            
+                            
                         </ul>
                     </div>
                 </nav>
-                <!-- End of Sidebar -->
+               
             </div>
         </div>
     </div>
